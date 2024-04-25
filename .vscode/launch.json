@@ -1,0 +1,11 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Inline into function",
+      "type": "firefox-scope-mapping",
+      "request": "launch",
+      "file": "${workspaceFolder}/inline-into-function/index.html"
+    }
+  ]
+}
