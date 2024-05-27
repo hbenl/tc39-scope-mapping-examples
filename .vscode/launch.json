@@ -6,6 +6,12 @@
       "type": "firefox-scope-mapping",
       "request": "launch",
       "file": "${workspaceFolder}/inline-into-function/index.html"
+    },
+    {
+      "name": "Variable shadowing",
+      "type": "firefox-scope-mapping",
+      "request": "launch",
+      "file": "${workspaceFolder}/variable-shadowing/index.html"
     }
   ]
 }
