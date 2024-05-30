@@ -12,6 +12,12 @@
       "type": "firefox-scope-mapping",
       "request": "launch",
       "file": "${workspaceFolder}/variable-shadowing/index.html"
+    },
+    {
+      "name": "Live ranges",
+      "type": "firefox-scope-mapping",
+      "request": "launch",
+      "file": "${workspaceFolder}/live-range/index.html"
     }
   ]
 }
