@@ -2,22 +2,28 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Inline into function",
+      "name": "Compress twice (with scope maps)",
       "type": "firefox-scope-mapping",
       "request": "launch",
-      "file": "${workspaceFolder}/inline-into-function/index.html"
+      "file": "${workspaceFolder}/terser-compress-twice/index.html",
     },
     {
-      "name": "Variable shadowing",
+      "name": "Mangle and compress (with scope maps)",
       "type": "firefox-scope-mapping",
       "request": "launch",
-      "file": "${workspaceFolder}/variable-shadowing/index.html"
+      "file": "${workspaceFolder}/terser-mangle-and-compress/index.html",
     },
     {
-      "name": "Live ranges",
-      "type": "firefox-scope-mapping",
+      "name": "Compress twice (without scope maps)",
+      "type": "chrome",
       "request": "launch",
-      "file": "${workspaceFolder}/live-range/index.html"
-    }
+      "file": "${workspaceFolder}/terser-compress-twice/index.html",
+    },
+    {
+      "name": "Mangle and compress (without scope maps)",
+      "type": "chrome",
+      "request": "launch",
+      "file": "${workspaceFolder}/terser-mangle-and-compress/index.html",
+    },
   ]
 }
