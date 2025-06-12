@@ -1,0 +1,22 @@
+{
+  "name": "tc39-scope-mapping-examples",
+  "version": "0.1.0",
+  "description": "This repository contains examples for experimenting with the TC39 scope mapping proposal.",
+  "author": "Holger Benl <hbenl@mozilla.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hbenl/tc39-scope-mapping-examples.git"
+  },
+  "scripts": {
+    "build": "tsx build.ts"
+  },
+  "devDependencies": {
+    "@chrome-devtools/source-map-scopes-codec": "npm:@jsr/chrome-devtools__source-map-scopes-codec@^0.2.0",
+    "@types/node": "^24.0.1",
+    "tc39-proposal-scope-mapping": "github:hbenl/tc39-proposal-scope-mapping",
+    "terser": "github:hbenl/terser#scopes",
+    "tsx": "^4.20.2",
+    "typescript": "^5.8.3"
+  }
+}
