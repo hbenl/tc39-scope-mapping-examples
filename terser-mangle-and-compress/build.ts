@@ -39,7 +39,7 @@ export async function build() {
     }
   });
   const { originalScopes, generatedRanges } = mergeScopeMaps([sourceMap1 as any], sourceMap2 as any);
-  const { names, scopes } = encode({ scopes: originalScopes, ranges: generatedRanges });
+  const { names, scopes } = encode({ scopes: originalScopes, ranges: generatedRanges }, sourceMap as any);
   const sourceMapWithScopes = { ...sourceMap, names, scopes };
 
   fs.writeFileSync(__dirname + "/generated.js", `${generatedSource}\n//# sourceMappingURL=generated.js.map`);
