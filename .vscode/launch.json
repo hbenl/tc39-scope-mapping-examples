@@ -25,5 +25,16 @@
       "request": "launch",
       "file": "${workspaceFolder}/terser-mangle-and-compress/index.html",
     },
-  ]
+    {
+      "name": "TodoMVC (with scope maps)",
+      "type": "firefox-scope-mapping",
+      "request": "launch",
+      "file": "${workspaceFolder}/todomvc/static/index.html",
+    },
+    {
+      "name": "TodoMVC (without scope maps)",
+      "type": "chrome",
+      "request": "launch",
+      "file": "${workspaceFolder}/todomvc/static/index.html",
+    }]
 }
