@@ -1,8 +1,7 @@
-
-function f1(x) {
-  function f2(y) {
+function outer(x) {
+  function inner(y) {
     console.log("Hello " + y);
   }
-  f2("dear " + x);
+  inner("dear " + x);
 }
-f1("world");
+outer("world");

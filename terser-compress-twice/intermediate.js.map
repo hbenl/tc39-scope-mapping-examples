@@ -1,0 +1,1 @@
+{"version":3,"names":["outer","x","y","console","log","global","function","inner","o","function inner(y){console.log(\"Hello \"+y)}","e"],"sources":["original.js"],"mappings":"AAAA,SAASA,MAAMC,GACb,IAAeC,IAGT,QAAUD,EAFdE,QAAQC,IAAI,SAAWF,EAG3B,CACAF,MAAM","ignoreList":[],"scopes":"BCAAK,DA,BHAAAC,DCM,BHBCOA,DL,CCD,CCB,CBP,ECAA,GB,EGAC,GJK,ECXC,GL,IAEC,FkB,FB,FP"}

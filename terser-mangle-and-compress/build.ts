@@ -42,6 +42,8 @@ export async function build() {
   const { names, scopes } = encode({ scopes: originalScopes, ranges: generatedRanges }, sourceMap as any);
   const sourceMapWithScopes = { ...sourceMap, names, scopes };
 
+  fs.writeFileSync(__dirname + "/intermediate.js", `${intermediateSource}\n//# sourceMappingURL=intermediate.js.map`);
+  fs.writeFileSync(__dirname + "/intermediate.js.map", JSON.stringify(sourceMap1));
   fs.writeFileSync(__dirname + "/generated.js", `${generatedSource}\n//# sourceMappingURL=generated.js.map`);
   fs.writeFileSync(__dirname + "/generated.js.map", JSON.stringify(sourceMapWithScopes));
 }
